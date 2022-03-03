@@ -1,0 +1,95 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --header-height: 80px;
+}
+
+.header-nav::after {
+    content: "";
+    width: 6px;
+    height: 2px;
+    background-color: #000;
+    border: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.header-nav:hover::after {
+    display: block;
+}
+
+.header-nav--active::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: #000;
+    border: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-btn:hover {
+    background-color: #efefef!important;
+}
+
+.user-header-form-checkbox:checked~.user-header-form {
+    display: block!important;
+}
+
+.header-user-nav:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.app-content-sub-nav-items {
+    border-radius: 50px;
+}
+
+.app-content-sub-nav-items:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.app-content-sub-nav-item-btn {
+    position: relative;
+}
+
+.app-content-sub-nav-item-btn:hover {
+    background-color: #e41c58!important;
+    cursor: pointer;
+}
+
+.app-content-sub-nav-item::after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    border-left: 1px solid #ccc;
+}
+
+.app-content-sub-nav-list .app-content-sub-nav-items:nth-child(1) div::after {
+    border: none;
+}
+
+.app-content-img {
+    background-color: #efefef!important;
+}
+
+.app-content-2-button:hover {
+    cursor: pointer;
+    background-color: #d5d5d5!important;
+    transition: all 0.5s;
+}
+
+.footer-text-hover:hover {
+    text-decoration: underline;
+}

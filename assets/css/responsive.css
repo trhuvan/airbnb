@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+    .app-content-sub-nav-list {
+        min-width: 100%!important;
+        width: 100%;
+    }
+    .mobile-header {
+        display: block!important;
+    }
+}
+
+@media (max-width: 800px) {
+    .app-content-sub-nav-list {
+        display: none;
+    }
+}
+
+@media (max-width:740px) {
+    .mobile-header-wrap {
+        margin: 0 8px!important;
+    }
+}
